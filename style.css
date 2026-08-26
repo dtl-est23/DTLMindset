@@ -17,3 +17,22 @@ h2 {
 p {
     color: #555;
 }
+header {
+    padding: 20px;
+}
+
+.ticker {
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.hero {
+    padding: 60px 40px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
