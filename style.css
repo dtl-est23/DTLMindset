@@ -46,10 +46,19 @@ header {
 }
 
 .hero {
-    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
 }
 
 .hero h2 {
-    font-size: 3rem;
-    margin: 10px 0;
+    font-size: 4rem;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin-top: 30px;
 }
