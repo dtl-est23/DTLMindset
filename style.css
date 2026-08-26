@@ -32,12 +32,12 @@ header {
 .ticker-content {
     display: inline-block;
     padding-left: nowrap;
-    animation: ticker 25s linear infinite;
+    animation: ticker 20s linear infinite;
 }
 
-@keyframes scroll {
+@keyframes ticker {
     from {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
 
     to {
