@@ -29,11 +29,9 @@ header {
     padding: 15px 0;
 }
 
-.ticker-content {
-    display: inline-block;
-    white-space: nowrap;
-    padding-left: nowrap;
-    animation: scroll 20s linear infinite;
+.ticker-content span {
+   margin-right: 100px;
+    letter-spacing: 2px;
 }
 
 @keyframes ticker {
