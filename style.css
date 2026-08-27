@@ -33,7 +33,7 @@ header {
     display: inline-block;
     white-space: nowrap;
     padding-left: nowrap;
-    animation: ticker 20s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 
 @keyframes ticker {
