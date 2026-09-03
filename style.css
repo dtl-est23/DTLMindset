@@ -92,7 +92,7 @@ header img {
 
 }
 .site-nav ul {
-  display:flex;
+  display:flexbox;
   gap:16px;
   list-style:none;
   padding:0;
