@@ -20,7 +20,10 @@ p {
 header {
     padding: 20px;
 }
-
+header img {
+   max-width: 100%;
+    height: auto;
+}
 .ticker {
     background: #111;
     color: white;
@@ -50,8 +53,7 @@ header {
     to {
         transform: translateX(-100%);
     }
-}
-
+}   
 .hero {
     max-width: 1200px;
     margin: 0 auto;
@@ -59,16 +61,31 @@ header {
 }
 
 .hero h2 {
-    font-size: 4rem;
+    font-size: clamp(2rem, 5vw, 4rem);
     margin: 0;
     line-height: 1.1;
-}
-header img {
-   max-width: 100%;
-    height: auto;
 }
 .hero p {
     font-size: 1.3rem;
     max-width: 700px;
     margin-top: 30px;
+}
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    header {
+        text-align: center;
+    }
+
 }
