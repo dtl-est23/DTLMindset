@@ -110,3 +110,6 @@ header img {
   background:#04AA6D;
   color:#fff;
 }
+html {
+    scroll-bahvior: smooth;
+}
