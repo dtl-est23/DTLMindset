@@ -103,11 +103,8 @@ header img {
   margin: 0;
 }
 .site-nav a {
-  display: block;
-  padding: 12px 20px;
-  border-radius: 999px;
   text-decoration: none;
-  color: #ffffff;
+  color: #222;
   font-weight: 600;
 }
 .site-nav a:hover, .site-nav a.active {
