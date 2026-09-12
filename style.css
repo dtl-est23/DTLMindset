@@ -35,7 +35,7 @@ header img {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    padding: 15px 0;
+    padding: 12px 0;
 }
 
 .ticker-content {
@@ -96,7 +96,7 @@ header img {
 }
 .site-nav ul {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   list-style: none;
   justify-content: center;
   padding: 0;
@@ -104,13 +104,21 @@ header img {
 }
 .site-nav a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 999px;
+    trasition: all 0.3s ease;
 }
-.site-nav a:hover, .site-nav a.active {
-  background: #04AA6D;
-  color: #fff;
+.site-nav a: hover,
+.site-nav a.active {
+  background: #C8A24A;
+  color: #4A0D0D;
 }
 html {
     scroll-bahvior: smooth;
+}
+section h2 {
+    color: #C8A24A;
 }
