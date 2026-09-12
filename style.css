@@ -18,8 +18,11 @@ p {
 }
 
 header {
-    text-align: left;
-    padding: 20px;
+    background-color: #131313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
 }
 header img {
    max-width: 200px;
@@ -103,7 +106,7 @@ header img {
   padding:12px 20px;
   border-radius:999px;
   text-decoration:none;
-  color:#0f172a;
+  color: white;
   font-weight:600;
 }
 .site-nav a:hover, .site-nav a.active {
