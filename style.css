@@ -95,23 +95,24 @@ header img {
 
 }
 .site-nav ul {
-  display:flexbox;
-  gap:16px;
-  list-style:none;
-  padding:0;
-  margin:0;
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 .site-nav a {
-  display:block;
-  padding:12px 20px;
-  border-radius:999px;
-  text-decoration:none;
+  display: block;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
   color: #ffffff;
-  font-weight:600;
+  font-weight: 600;
 }
 .site-nav a:hover, .site-nav a.active {
-  background:#04AA6D;
-  color:#fff;
+  background: #04AA6D;
+  color: #fff;
 }
 html {
     scroll-bahvior: smooth;
