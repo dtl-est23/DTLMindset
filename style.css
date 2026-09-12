@@ -104,7 +104,7 @@ header img {
 }
 .site-nav a {
   text-decoration: none;
-  color: #222;
+  color: white;
   font-weight: 600;
 }
 .site-nav a:hover, .site-nav a.active {
