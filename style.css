@@ -18,7 +18,7 @@ p {
 }
 
 header {
-    background-color: #131313;
+    background-color: #4A0D0D;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@ header img {
     height: auto;
 }
 .ticker {
-    background: #111;
+    background: #4A0D0D;
     color: white;
     overflow: hidden;
     white-space: nowrap;
