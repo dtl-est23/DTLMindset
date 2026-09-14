@@ -1,55 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DTL Mindset</title>
-  <link rel="stylesheet" href="style.css">
+  <title>DTL Mindset | Determined To Live</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Header Navigation -->
   <header>
-    <img src="images/dtl-logo.PNG" alt="DTLMindset Logo">
-    <nav class="site-nav" aria-label="Primary">
-      <ul>
-        <li><a href="homepage" class="active">HOMEPAGE</a></li>
-        <li><a href="why-dtlmindset">ABOUT</a></li>
-        <li><a href="todays-word">TODAY'S WORD</a></li>
-        <li><a href="weekly-challenge">CHALLENGE</a></li>
-        <li><a href="tools">TOOLS</a></li>
-        <li><a href="join">JOIN</a></li>
+    <nav class="navbar">
+      <div class="brand-container">
+        <div class="logo-text">
+          <span class="brand-title">DTL</span>
+          <span class="brand-sub">DETERMINED TO LIVE</span>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">HOMEPAGE</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#daily-reset">TODAY'S WORD</a></li>
+        <li><a href="challenge.html">CHALLENGE</a></li>
+        <li><a href="join.html">JOIN</a></li>
       </ul>
-  </nav>
+
+      <a href="#shop-dtl" class="btn-nav">SHOP DTL &rarr;</a>
+    </nav>
   </header>
-  <div class="ticker">
-    <div class="ticker-content">
-      <span>STAY  DETERMINED  ✦</span>
-      <span>FEED  YOUR  DISCIPLINE ✦</span>
-      <span>STARVE  YOUR  EXCUSES  ✦</span>
-      <span>LIVE  WITH  PURPOSE  ✦</span>
-      <span>STAY  DETERMINED  ✦</span>
-      <span>FEED  YOUR  DISCIPLINE  ✦</span>
-      <span>STARVE  YOUR  EXCUSES  ✦</span>
-      <span>LIVE  WITH  PURPOSE  ✦</span>
+
+  <!-- Section 1: Animated Hero (Faith for the Fight) -->
+  <section id="homepage" class="hero animated-hero">
+    <div class="cross-bg animated-cross">&#10013;</div>
+
+    <div class="hero-content">
+      <div class="focus-word">
+        <span class="line-prefix"></span> FAITH FOR THE FIGHT. DETERMINATION FOR THE FUTURE.
+      </div>
+
+      <h1>
+        FEED YOUR <span class="gold">DISCIPLINE.</span><br>
+        STARVE YOUR<br>
+        <span class="outline">EXCUSES.</span>
+      </h1>
+
+      <p class="description">
+        A Faith-driven mindset platform designed to help people grow in discipline, purpose, and faith.
+      </p>
+    </div> <!-- Properly closed hero-content -->
+
+    <div class="hero-logo-container">
+      <div class="ring r1"></div>
+      <div class="ring r2"></div>
+
+      <div class="logo-graphic-wrapper">
+        <div class="brand-emblem-placeholder animated-logo">&#10013;</div>
+        <div class="logo-subtitle-group">
+          <span class="red-sub">DETERMINED</span>
+          <span class="gold-sub">& CO</span>
+          <div class="dtl-tagline">
+            <span>DETERMINED</span>
+            <strong>TO LIVE.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ticker Animation -->
+  <div class="ticker animated-ticker">
+    <div class="ticker-track">
+      <span>STAY DETERMINED</span> &#9830;
+      <span>FEED YOUR DISCIPLINE</span> &#9830;
+      <span>STARVE YOUR EXCUSES</span> &#9830;
+      <span>LIVE WITH PURPOSE</span> &#9830;
     </div>
   </div>
-  <section id="homepage">
-    <h2>Feed Your Discipline.</h2>
-    <h2>Starve Your Excuses.</h2>
-    <p>A Faith-driven mindset platform designed to help people grow in discinpline, purpose, and faith.</p>
+
+  <!-- Section 2: DAILY RESET DASHBOARD -->
+  <section id="daily-reset" class="reset-section">
+    <div class="dashboard-wrapper">
+      
+      <!-- Dashboard Header -->
+      <header class="reset-header">
+        <div class="title-group">
+          <span class="sub-line">YOUR DAILY RESET</span>
+          <h1 class="main-title">TODAY'S WORD FOR A<br>DETERMINED LIFE.</h1>
+        </div>
+        <div class="date-widget">
+          <span class="calendar-icon">&#128197;</span>
+          <span id="todays-date">Loading...</span>
+          <span class="status-dot"></span>
+        </div>
+      </header>
+
+      <!-- Grid Content -->
+      <div class="content-grid">
+        
+        <!-- Grid 1: Scripture -->
+        <article class="grid-panel panel-black">
+          <div class="panel-header">
+            <span class="icon-frame">&#128214;</span>
+            <span class="header-title">TODAY'S VERSE</span>
+          </div>
+          <div class="quote-frame">
+            <span class="quote-icon">&ldquo;&rdquo;</span>
+            <p id="fuelVerseText" class="panel-content verse-text">
+              <!-- Inserted by script.js -->
+            </p>
+          </div>
+          <p id="fuelVerseRef" class="verse-reference">
+            <!-- Inserted by script.js -->
+          </p>
+          <span class="order-number">01</span>
+        </article>
+
+        <!-- Grid 2: Prayer/Devotional -->
+        <article class="grid-panel panel-cream">
+          <div class="panel-header">
+            <span class="icon-frame">&#9825;</span>
+            <span class="header-title">TODAY'S PRAYER</span>
+          </div>
+          <p id="fuelPrayerText" class="panel-content prayer-text">
+            <!-- Inserted by script.js -->
+          </p>
+          <p class="prayer-amen">Amen.</p>
+          <span class="order-number">02</span>
+        </article>
+
+        <!-- Grid 3: Action Focus -->
+        <article class="grid-panel panel-red">
+          <div class="panel-header">
+            <span class="icon-frame">&#9678;</span>
+            <span class="header-title">FOCUS ACTION</span>
+          </div>
+          <p id="fuelActionTitle" class="action-title panel-content">
+            <!-- Inserted by script.js -->
+          </p>
+          <p id="fuelActionDesc" class="action-description">
+            <!-- Inserted by script.js -->
+          </p>
+          <button id="checkInBtn" class="action-btn">
+            <span class="check-icon">&#10003;</span> MAKE THIS MY MOVE
+          </button>
+          <span class="order-number">03</span>
+        </article>
+
+      </div> <!-- end grid content -->
+
+      <!-- Footer for Grid: Streak and Today's Word -->
+      <div class="content-grid-footer">
+        
+        <div class="bottom-bar-flex">
+          
+          <!-- Grid 4: Streak Panel -->
+          <article class="grid-panel panel-black streak-panel">
+            <div class="panel-header">
+              <span class="icon-frame">&#128293;</span>
+              <span class="header-title">FOCUS STREAK</span>
+            </div>
+            <p class="panel-content streak-count">
+              <span id="streakCount">0</span> Day Streak
+            </p>
+          </article>
+
+          <!-- Today's Word Panel -->
+          <article class="grid-panel panel-gold">
+            <div class="panel-header">
+              <span class="icon-frame">&#128293;</span>
+              <span class="header-title">TODAY'S WORD</span>
+            </div>
+            <p id="fuelWordTitle" class="panel-content word-title">
+              <!-- Inserted by script.js -->
+            </p>
+          </article>
+        </div>
+
+        <p id="fuelWordDesc" class="word-description">
+          <!-- Inserted by script.js -->
+        </p>
+
+      </div>
+
+      <!-- Final Reset Footer -->
+      <footer class="reset-footer">
+        <div class="footer-left">
+          <p class="footer-note">Fresh encouragement generated each day with thoughtful AI and anchored in Scripture.</p>
+        </div>
+        <a href="#share" class="share-btn">SHARE TODAY'S FUEL &rarr;</a>
+      </footer>
+
+    </div> <!-- end dashboard wrapper -->
   </section>
-  <section id="why-dtlmindset">
-    <h2>Why DTLMindset</h2>
-  </section>
-  <section id="todays-word">
-    <h2>Today's Word</h2>
-  </section>
-  <section id="weekly-challenge">
-    <h2>Weekly Challenge</h2>
-  </section>
-  <section id="tools">
-    <h2>Tools For The Determined</h2>
-  </section>
-  <section id="join">
-    <h2>Join The Determined</h2>
-  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Determined &amp; Co | DTLMindset</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
