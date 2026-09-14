@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join DTL | Daily Prayer & Reset</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Specific styles for Join page layout */
+    .join-hero {
+      text-align: center;
+      padding: 60px 20px 30px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .join-hero h1 {
+      font-size: 42px;
+      font-weight: 900;
+      margin-top: 10px;
+      line-height: 1.1;
+    }
+
+    .join-container {
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 20px 20px 60px;
+    }
+
+    .join-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    }
+
+    /* Delivery Type Toggle */
+    .toggle-container {
+      display: flex;
+      background-color: var(--bg-cream);
+      padding: 4px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .toggle-btn {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      background: none;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .toggle-btn.active {
+      background-color: var(--panel-red);
+      color: var(--bg-cream);
+    }
+
+    /* Form Inputs */
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      color: var(--text-dark);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: var(--font-main);
+      background-color: #fafafa;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--panel-red);
+      background-color: #ffffff;
+    }
+
+    .btn-submit {
+      width: 100%;
+      background-color: var(--text-dark);
+      color: var(--bg-cream);
+      padding: 16px;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn-submit:hover {
+      opacity: 0.9;
+    }
+
+    .disclaimer {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 15px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    /* Confirmation Banner */
+    .success-banner {
+      display: none;
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      padding: 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="brand-container">
+        <div class="logo-text">
+          <span class="brand-title">DTL</span>
+          <span class="brand-sub">DETERMINED TO LIVE</span>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">HOMEPAGE</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="index.html#daily-reset">TODAY'S WORD</a></li>
+        <li><a href="challenge.html">CHALLENGE</a></li>
+        <li><a href="join.html">JOIN</a></li>
+      </ul>
+
+      <a href="#shop-dtl" class="btn-nav">SHOP DTL &rarr;</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="join-hero">
+    <span class="sub-line">DAILY DEVOTIONAL DELIVERED</span>
+    <h1>NEVER MISS TODAY'S PRAYER.</h1>
+  </section>
+
+  <!-- Main Sign-Up Form Section -->
+  <main class="join-container">
+    <article class="join-card">
+
+      <!-- Delivery Method Selector -->
+      <div class="toggle-container">
+        <button type="button" id="toggleSms" class="toggle-btn active">SMS TEXT MESSAGE</button>
+        <button type="button" id="toggleEmail" class="toggle-btn">EMAIL DAILY</button>
+      </div>
+
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="fullName">FIRST NAME</label>
+          <input type="text" id="fullName" class="form-control" placeholder="Enter your first name" required>
+        </div>
+
+        <!-- Dynamic Contact Input -->
+        <div class="form-group" id="contactGroup">
+          <label for="contactInput" id="contactLabel">PHONE NUMBER (FOR SMS)</label>
+          <input type="tel" id="contactInput" class="form-control" placeholder="(555) 000-0000" required>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submitBtn">RECEIVE DAILY PRAYER &rarr;</button>
+
+        <p class="disclaimer" id="disclaimerText">
+          By signing up for SMS, you agree to receive daily prayer text messages from DTL Mindset. Message and data rates may apply. Reply STOP to cancel at any time.
+        </p>
+      </form>
+
+      <div id="successBanner" class="success-banner">
+        &#10003; You're locked in! Check your inbox/messages for confirmation.
+      </div>
+
+    </article>
+  </main>
+
+  <!-- Dark Red Footer Banner -->
+  <div style="max-width: 650px; margin: 0 auto 60px; padding: 0 20px;">
+    <footer class="reset-footer">
+      <div class="footer-left">
+        <p class="footer-note">Looking for immediate encouragement today?</p>
+      </div>
+      <a href="index.html#daily-reset" class="share-btn">READ TODAY'S RESET &rarr;</a>
+    </footer>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Determined &amp; Co | DTLMindset</p>
+  </footer>
+
+  <script>
+    // Toggle state management
+    const toggleSms = document.getElementById('toggleSms');
+    const toggleEmail = document.getElementById('toggleEmail');
+    const contactLabel = document.getElementById('contactLabel');
+    const contactInput = document.getElementById('contactInput');
+    const disclaimerText = document.getElementById('disclaimerText');
+    const signupForm = document.getElementById('signupForm');
+    const successBanner = document.getElementById('successBanner');
+
+    let currentMode = 'sms'; // 'sms' or 'email'
+
+    toggleSms.addEventListener('click', () => {
+      currentMode = 'sms';
+      toggleSms.classList.add('active');
+      toggleEmail.classList.remove('active');
+      contactLabel.textContent = 'PHONE NUMBER (FOR SMS)';
+      contactInput.type = 'tel';
+      contactInput.placeholder = '(555) 000-0000';
+      disclaimerText.style.display = 'block';
+    });
+
+    toggleEmail.addEventListener('click', () => {
+      currentMode = 'email';
+      toggleEmail.classList.add('active');
+      toggleSms.classList.remove('active');
+      contactLabel.textContent = 'EMAIL ADDRESS';
+      contactInput.type = 'email';
+      contactInput.placeholder = 'you@example.com';
+      disclaimerText.style.display = 'none';
+    });
+
+    // Submission Handler
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const name = document.getElementById('fullName').value;
+      const contact = contactInput.value;
+
+      // Local storage recording for test/demo purposes
+      const existingSubscribers = JSON.parse(localStorage.getItem('dtl_subscribers')) || [];
+      existingSubscribers.push({ name, contact, type: currentMode, date: new Date().toISOString() });
+      localStorage.setItem('dtl_subscribers', JSON.stringify(existingSubscribers));
+
+      // Display Confirmation
+      signupForm.style.display = 'none';
+      successBanner.style.display = 'block';
+    });
+
+    // Auto Copyright Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
