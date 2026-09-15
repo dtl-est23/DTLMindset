@@ -33,6 +33,8 @@ body {
 .logo-text {
   display: flex;
   flex-direction: column;
+  align-items: center; /* Centers brand name and tagline*/
+  text-align: center;
 }
 
 .brand-title {
@@ -104,6 +106,21 @@ body {
   color: #ffffff;
   pointer-events: none;
   font-family: serif;
+}
+
+.hero-bg-watermark {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 320px;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-bg-watermark img {
+  width: 100%;
+  height: auto;
 }
 
 .hero-content {
