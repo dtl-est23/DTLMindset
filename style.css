@@ -20,17 +20,15 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 6%;
-  position: absolute;
+  padding: 20px 6%;
   width: 100%;
-  z-index: 1000;
 }
 
 .nav-logo {
@@ -110,11 +108,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 140px 6% 60px;
+  padding: 180px 6% 80px !important; /* Increases top padding to 180px so header never overlaps text */
   position: relative;
   background: radial-gradient(circle at 75% 50%, #2a0e0b 0%, #0d0505 70%);
   overflow: hidden;
-  padding-top: 140px !important;
 }
 
 .animated-cross {
@@ -261,12 +258,11 @@ header {
 }
 
 .hero-center-logo {
-  width: 110px;
+  width: 100px;
   height: auto;
-  max-weight: 100%;
-  project-fit: contain;
-  margin-bottom: 12px;
-  filter: drop-shadow( 0 0 10px rgba(200, 40, 40, 0.4));
+  object-fit: contain;
+  margin-bottom: 8px;
+  filter: drop-shadow( 0 0 12px rgba(200, 40, 40, 0.4));
 }
 
 .brand-emblem-placeholder {
