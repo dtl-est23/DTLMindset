@@ -99,21 +99,17 @@ body {
 }
 
 .animated-cross {
-  position: absolute;
-  right: 2%;
-  font-size: 42rem;
-  opacity: 0.03;
-  color: #ffffff;
-  pointer-events: none;
-  font-family: serif;
+  display: none !important; /* Hides the 42rem font cross completely */
 }
 
 .hero-bg-watermark {
   position: absolute;
-  top: 10%;
-  left: 5%;
-  width: 320px;
-  opacity: 0.05;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;           /* Controls watermark image size */
+  max-width: 25vw;        /* Keeps it small on all screen sizes */
+  opacity: 0.05;          /* Makes it subtle in background */
   pointer-events: none;
   z-index: 0;
 }
@@ -121,7 +117,9 @@ body {
 .hero-bg-watermark img {
   width: 100%;
   height: auto;
+  display: block;
 }
+
 
 .hero-content {
   max-width: 650px;
