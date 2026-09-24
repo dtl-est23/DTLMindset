@@ -117,6 +117,7 @@ body {
 
 h1 {
     color: #c62828;
+}
 .focus-word {
   display: flex;
   align-items: center;
@@ -136,6 +137,7 @@ h1 {
 
 h2 {
     color: #222;
+}
 .hero h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 5.8rem;
@@ -147,6 +149,7 @@ h2 {
 
 p {
     color: #555;
+}
 .gold {
   color: #d8b04a;
 }
@@ -157,6 +160,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+}
 .outline {
   color: transparent;
   -webkit-text-stroke: 2px #ffffff;
@@ -308,14 +312,9 @@ header img {
     white-space: nowrap;
     width: 100%;
     padding: 12px 0;
-  background: #d8b04a;
-  color: #0d0505;
   font-weight: 900;
   font-size: 0.9rem;
   letter-spacing: 2px;
-  overflow: hidden;
-  padding: 14px 0;
-  white-space: nowrap;
 }
 
 .ticker-content {
@@ -323,6 +322,7 @@ header img {
     white-space: nowrap;
     padding-left: 100%;
     animation: scroll 20s linear infinite;
+}
 .ticker-track {
   display: inline-block;
   animation: scroll 15s linear infinite;
@@ -351,6 +351,7 @@ header img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 80px 40px;
+}
 /* SECTION 2: NEW DAILY RESET DASHBOARD - REFERENCE STYLING */
 .reset-section {
   padding: 80px 8%;
@@ -362,6 +363,7 @@ header img {
     font-size: clamp(2rem, 5vw, 4rem);
     margin: 0;
     line-height: 1.1;
+}
 .dashboard-wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -370,7 +372,7 @@ header img {
     font-size: 1.3rem;
     max-width: 700px;
     margin-top: 30px;
-
+}
 /* Dashboard Header Styles */
 .reset-header {
   display: flex;
@@ -452,9 +454,9 @@ header img {
   margin-bottom: 20px;
 }
 
-    header {
-        text-align: center;
-    }
+header {
+ text-align: center;
+}
 /* Common Grid Panel Styling */
 .grid-panel {
   padding: 40px;
@@ -468,7 +470,7 @@ header img {
   gap: 12px;
   margin-bottom: 35px;
 }
-.site-nav ul {
+.site-nav ul {}
 
 .grid-panel .icon-frame {
   width: 45px;
@@ -484,7 +486,7 @@ header img {
 }
 .site-nav a {
   text-decoration: none;
-
+}
 .grid-panel .header-title {
   font-size: 10px;
   font-weight: 800;
@@ -604,7 +606,7 @@ header img {
     border-radius: 999px;
     trasition: all 0.3s ease;
 }
-.site-nav a: hover,
+.site-nav a:hover,
 .site-nav a.active {
   background: #C8A24A;
   color: #4A0D0D;
@@ -762,7 +764,7 @@ footer {
   
   .panel-cream .order-number { right: 40px; }
   .reset-footer { flex-direction: column; gap: 20px; align-items: flex-start; }
-  
+
 section h2 {
     color: #C8A24A;
 }
