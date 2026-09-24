@@ -1,20 +1,29 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DTL Mindset | Determined To Live</title>
+  <title>DTL Mindset</title>
   <link rel="stylesheet" href="style.css">
+  <title>DTL Mindset | Determined To Live</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- Header Navigation -->
   <header>
+    <img src="images/dtl-logo.PNG" alt="DTLMindset Logo">
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="homepage" class="active">HOMEPAGE</a></li>
+        <li><a href="why-dtlmindset">ABOUT</a></li>
+        <li><a href="todays-word">TODAY'S WORD</a></li>
+        <li><a href="weekly-challenge">CHALLENGE</a></li>
+        <li><a href="tools">TOOLS</a></li>
+        <li><a href="join">JOIN</a></li>
     <nav class="navbar">
       <div class="brand-container">
-        <!-- Brand Logo -->
-        <img src="images/dtl-logo.PNG" alt="DTL Logo" class="nav-logo">
-        
         <div class="logo-text">
           <span class="brand-title">DTL</span>
           <span class="brand-sub">DETERMINED TO LIVE</span>
@@ -28,17 +37,25 @@
         <li><a href="challenge.html">CHALLENGE</a></li>
         <li><a href="join.html">JOIN</a></li>
       </ul>
+  </nav>
 
       <a href="#shop-dtl" class="btn-nav">SHOP DTL &rarr;</a>
     </nav>
   </header>
-    
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <!-- Brand watermark overlay -->
-    <div class="hero-bg-watermark">
-      <img src="images/dtl-logo.PNG" alt="" aria-hidden="true">
-    </div>
+  <div class="ticker">
+    <div class="ticker-content">
+      <span>STAY  DETERMINED  ✦</span>
+      <span>FEED  YOUR  DISCIPLINE ✦</span>
+      <span>STARVE  YOUR  EXCUSES  ✦</span>
+      <span>LIVE  WITH  PURPOSE  ✦</span>
+      <span>STAY  DETERMINED  ✦</span>
+      <span>FEED  YOUR  DISCIPLINE  ✦</span>
+      <span>STARVE  YOUR  EXCUSES  ✦</span>
+      <span>LIVE  WITH  PURPOSE  ✦</span>
+
+  <!-- Section 1: Animated Hero (Faith for the Fight) -->
+  <section id="homepage" class="hero animated-hero">
+    <div class="cross-bg animated-cross">&#10013;</div>
 
     <div class="hero-content">
       <div class="focus-word">
@@ -54,29 +71,48 @@
       <p class="description">
         A Faith-driven mindset platform designed to help people grow in discipline, purpose, and faith.
       </p>
-    </div>
+    </div> <!-- Properly closed hero-content -->
 
     <div class="hero-logo-container">
       <div class="ring r1"></div>
       <div class="ring r2"></div>
-      
+
       <div class="logo-graphic-wrapper">
-        <img src="images/dtl-logo.PNG" alt="DTL Logo" class="hero-center-logo">
-        <div class="dtl-tagline">
-          <span class="red-sub">DETERMINED &amp; CO</span>
-          <span class="gold-sub">DETERMINED TO LIVE.</span>
+        <div class="brand-emblem-placeholder animated-logo">&#10013;</div>
+        <div class="logo-subtitle-group">
+          <span class="red-sub">DETERMINED</span>
+          <span class="gold-sub">& CO</span>
+          <div class="dtl-tagline">
+            <span>DETERMINED</span>
+            <strong>TO LIVE.</strong>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  <section id="homepage">
+    <h2>Feed Your Discipline.</h2>
+    <h2>Starve Your Excuses.</h2>
+    <p>A Faith-driven mindset platform designed to help people grow in discinpline, purpose, and faith.</p>
   </section>
+  <section id="why-dtlmindset">
+    <h2>Why DTLMindset</h2>
+  </section>
+  <section id="todays-word">
+    <h2>Today's Word</h2>
+  </section>
+  <section id="weekly-challenge">
+    <h2>Weekly Challenge</h2>
+  </section>
+  <section id="tools">
+    <h2>Tools For The Determined</h2>
+  </section>
+  <section id="join">
+    <h2>Join The Determined</h2>
 
   <!-- Ticker Animation -->
   <div class="ticker animated-ticker">
     <div class="ticker-track">
-      <span>STAY DETERMINED</span> &#9830;
-      <span>FEED YOUR DISCIPLINE</span> &#9830;
-      <span>STARVE YOUR EXCUSES</span> &#9830;
-      <span>LIVE WITH PURPOSE</span> &#9830;
       <span>STAY DETERMINED</span> &#9830;
       <span>FEED YOUR DISCIPLINE</span> &#9830;
       <span>STARVE YOUR EXCUSES</span> &#9830;
@@ -166,22 +202,44 @@
               <span class="icon-frame">&#128293;</span>
               <span class="header-title">FOCUS STREAK</span>
             </div>
-            <p id="streakCounter" class="panel-content streak-count">
-              <span id="streakDays">0</span> DAYS
+            <p class="panel-content streak-count">
+              <span id="streakCount">0</span> Day Streak
             </p>
-            <span class="order-number">04</span>
           </article>
 
+          <!-- Today's Word Panel -->
+          <article class="grid-panel panel-gold">
+            <div class="panel-header">
+              <span class="icon-frame">&#128293;</span>
+              <span class="header-title">TODAY'S WORD</span>
+            </div>
+            <p id="fuelWordTitle" class="panel-content word-title">
+              <!-- Inserted by script.js -->
+            </p>
+          </article>
         </div>
+
+        <p id="fuelWordDesc" class="word-description">
+          <!-- Inserted by script.js -->
+        </p>
+
       </div>
-        
-    </div>
+
+      <!-- Final Reset Footer -->
+      <footer class="reset-footer">
+        <div class="footer-left">
+          <p class="footer-note">Fresh encouragement generated each day with thoughtful AI and anchored in Scripture.</p>
+        </div>
+        <a href="#share" class="share-btn">SHARE TODAY'S FUEL &rarr;</a>
+      </footer>
+
+    </div> <!-- end dashboard wrapper -->
   </section>
 
   <footer>
-    <p>&copy;<span id="year"></span>Determined &amp; Co | DTLMindset</p>
+    <p>&copy; <span id="year"></span> Determined &amp; Co | DTLMindset</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
