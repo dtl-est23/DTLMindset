@@ -7,46 +7,25 @@
 }
 
 body {
-  background: #f5f3eb;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    background-color: #f5f2eb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
   background: #0d0505;
+  font-family: 'Montserrat', sans-serif;
   color: #e6e6e6;
   overflow-x: hidden;
 }
 
-/* Header & Navbar */
-
-header {
-  background-color: #4A0D0D;
-  display: flex;
-  justify-content: space-between;
-  align:-items: center;
-  padding: 20px 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
+/* Header & Navbar - Reusing original styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 6%;
+  padding: 30px 6%;
+  position: absolute;
   width: 100%;
   z-index: 1000;
-  position: absolute;
-}
-
-.nav-logo {
-  height: 35px !important;    /* Forces logo to fit navbar height */
-  width: auto !important;     /* Prevents distortion */
-  max-width: 120px !important;/* Prevents horizontal stretch */
-  object-fit: contain;
-  display: block;
 }
 
 .brand-container {
@@ -58,8 +37,6 @@ header {
 .logo-text {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers brand name and tagline */
-  text-align: center;
 }
 
 .brand-title {
@@ -111,14 +88,13 @@ header {
   border-color: #d8b04a;
 }
 
-/* SECTION 1: ORIGINAL ANIMATED HERO */
-
+/* SECTION 1: ORIGINAL ANIMATED HERO - Keeping original design and animations */
 .animated-hero {
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 180px 6% 80px !important; /* Increases top padding so header never overlaps text */
+  padding: 140px 6% 60px;
   position: relative;
   background: radial-gradient(circle at 75% 50%, #2a0e0b 0%, #0d0505 70%);
   overflow: hidden;
@@ -134,33 +110,13 @@ header {
   font-family: serif;
 }
 
-.hero-bg-watermark {
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 250px;           /* Controls watermark image size */
-  max-width: 25vw;        /* Keeps it small on all screen sizes */
-  opacity: 0.05;          /* Makes it subtle in background */
-  pointer-events: none;
-  z-index: 0;
-}
-
-.hero-bg-watermark img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .hero-content {
   max-width: 650px;
   z-index: 1;
 }
 
 h1 {
-  color: #c62828;
-}
-
+    color: #c62828;
 .focus-word {
   display: flex;
   align-items: center;
@@ -179,9 +135,7 @@ h1 {
 }
 
 h2 {
-  color: #222;
-}
-
+    color: #222;
 .hero h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 5.8rem;
@@ -192,17 +146,25 @@ h2 {
 }
 
 p {
-  color: #555;
-}
-
+    color: #555;
 .gold {
   color: #d8b04a;
 }
 
+header {
+    background-color: #4A0D0D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
 .outline {
   color: transparent;
   -webkit-text-stroke: 2px #ffffff;
 }
+header img {
+   max-width: 200px;
+    width: 180px;
+    height: auto;
 
 .description {
   margin-bottom: 30px;
@@ -264,67 +226,19 @@ p {
 }
 
 /* Original Logo Graphics */
-
 .hero-logo-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-}
-
-.logo-graphic-wrapper {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero-center-logo {
-  width: 100px;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 8px;
-  filter: drop-shadow(0 0 12px rgba(200, 40, 40, 0.4));
+  margin-right: 40px;
 }
 
 .brand-emblem-placeholder {
-  font-size: 3rem;
-  font-weight: 900;
+  font-size: 8rem;
   color: #c82828;
   text-shadow: 0 0 20px rgba(216, 176, 74, 0.5);
-  margin-bottom: 6px;
-  line-height: 1;
-  background: none !important;
   animation: glow 5s infinite ease-in-out;
-}
-
-.dtl-tagline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 35px;
-  line-height: 1.2;
-}
-
-.dtl-tagline span {
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-  color: #d8b04a;
-  font-weight: 700;
-}
-
-.dtl-tagline strong {
-  font-size: 1.3rem;
-  letter-spacing: 1.5px;
-  color: #ffffff;
-  font-weight: 900;
 }
 
 @keyframes glow {
@@ -352,6 +266,27 @@ p {
   font-size: 1.1rem;
 }
 
+.dtl-tagline {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.dtl-tagline span {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #d8b04a;
+  font-weight: 700;
+}
+
+.dtl-tagline strong {
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  font-weight: 900;
+}
+
 .ring {
   position: absolute;
   border: 1px solid rgba(216, 176, 74, 0.15);
@@ -365,32 +300,39 @@ p {
 .r1 { width: 380px; height: 380px; }
 .r2 { width: 500px; height: 500px; }
 
-/* Ticker Bar */
-
+/* Ticker Bar - Keeping original design and animations */
 .ticker {
+    background: #4A0D0D;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 12px 0;
   background: #d8b04a;
   color: #0d0505;
   font-weight: 900;
   font-size: 0.9rem;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  overflow: hidden;
   padding: 14px 0;
   white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
 }
 
-.ticker-content{
-  display: inline-block;
-  white-space: nowrap;
-  padding-left: 100%;
-  animation: scroll-ticker 20s linear infinite;
-}
-
+.ticker-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: scroll 20s linear infinite;
 .ticker-track {
   display: inline-block;
-  white-space: nowrap;
-  animation: scroll-ticker 15s linear infinite;
+  animation: scroll 15s linear infinite;
+}
+
+.ticker-content span {
+    margin-right: 100px;
+    letter-spacing: 2px;
+.ticker-track span {
+  margin: 0 15px;
 }
 
 @keyframes scroll {
@@ -527,24 +469,21 @@ p {
   margin-bottom: 35px;
 }
 .site-nav ul {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
 .grid-panel .icon-frame {
   width: 45px;
   height: 45px;
   display: flex;
+  gap: 30px;
+  list-style: none;
   justify-content: center;
+  padding: 0;
+  margin: 0;
   align-items: center;
   border-radius: 8px;
 }
 .site-nav a {
   text-decoration: none;
-}
 
 .grid-panel .header-title {
   font-size: 10px;
@@ -665,7 +604,7 @@ p {
     border-radius: 999px;
     trasition: all 0.3s ease;
 }
-.site-nav a:hover,
+.site-nav a: hover,
 .site-nav a.active {
   background: #C8A24A;
   color: #4A0D0D;
@@ -827,4 +766,3 @@ footer {
 section h2 {
     color: #C8A24A;
 }
-
