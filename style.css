@@ -511,7 +511,7 @@ img {
 
 .brand-emblem-placeholder img {
    width: 320px;
-   max-width: 100%;
+   max-width: none;
    height: auto;
    
    display: block;
