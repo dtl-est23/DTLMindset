@@ -87,7 +87,7 @@ img {
    locked together.
 */
 
-.nav-logo-rings {
+.hero-logo-rings {
   width: 420px;
   height: 420px;
 
@@ -120,7 +120,7 @@ img {
 
 /* Both rings */
 
-.nav-ring {
+.hero-ring {
   position: absolute;
 
   top: 50%;
@@ -138,7 +138,7 @@ img {
 
 /* Inner gold ring */
 
-.nav-ring-inner {
+.hero-ring-inner {
   width: 360px;
   height: 360px;
 
@@ -151,7 +151,7 @@ img {
 
 /* Outer gold ring */
 
-.nav-ring-outer {
+.hero-ring-outer {
   width: 400px;
   height: 400px;
 
