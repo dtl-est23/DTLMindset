@@ -72,14 +72,13 @@ img {
    NAVBAR LOGO AND TWO GOLD RINGS
    ================================================== */
 
-.brand-container {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-
-  flex-shrink: 0;
-
-  text-decoration: none;
+.brand-container img {
+    width: 52px;
+   height: 52px;
+   object-fit: contain;
+   display: block;
+   flex-shrink: 0;
+   z-index: 3;
 }
 
 
