@@ -88,8 +88,8 @@ img {
 */
 
 .nav-logo-rings {
-  width: 80px;
-  height: 80px;
+  width: 420px;
+  height: 420px;
 
   position: relative;
 
@@ -98,6 +98,7 @@ img {
   align-items: center;
 
   flex-shrink: 0;
+   margin: 0 auto;
 }
 
 
@@ -130,14 +131,16 @@ img {
   border-radius: 50%;
 
   pointer-events: none;
+
+   z-index: 1;
 }
 
 
 /* Inner gold ring */
 
 .nav-ring-inner {
-  width: 100px;
-  height: 100px;
+  width: 360px;
+  height: 360px;
 
   border: 2px solid var(--dtl-gold);
 
@@ -149,11 +152,11 @@ img {
 /* Outer gold ring */
 
 .nav-ring-outer {
-  width: 120px;
-  height: 120px;
+  width: 400px;
+  height: 400px;
 
   border:
-    1px solid rgba(216, 176, 74, 0.60);
+    3px solid rgba(216, 176, 74, 0.60);
 }
 
 
@@ -390,7 +393,7 @@ img {
   letter-spacing: 1.5px;
 }
 
-#typing-text {
+.typing-text {
   color: var(--dtl-white);
 
   border-right:
@@ -497,6 +500,14 @@ img {
 }
 
 .brand-emblem-placeholder {
+   position: relative;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   z-index: 2;
+   
   font-size: 8rem;
 
   color: var(--dtl-red);
@@ -506,6 +517,18 @@ img {
 
   animation:
     glow 5s infinite ease-in-out;
+}
+
+.brand-emblem-placeholder img {
+   width: 320px;
+   max-width: 100%;
+   height: auto;
+   
+   display: block;
+   object-fit: contain;
+   
+   position: relative;
+   z-index: 3;
 }
 
 @keyframes glow {
