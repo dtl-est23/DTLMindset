@@ -1701,3 +1701,931 @@ img {
   }
 
 }
+/* ==================================================
+   CHALLENGE PAGE
+   ================================================== */
+
+.challenge-page {
+  background: var(--dtl-black);
+  color: var(--dtl-white);
+}
+
+
+/* ==================================================
+   CHALLENGE HERO
+   ================================================== */
+
+.challenge-hero {
+  min-height: 620px;
+
+  padding: 170px 8% 100px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(146, 43, 43, 0.42) 0%,
+      rgba(13, 5, 5, 0) 58%
+    ),
+    var(--dtl-black);
+
+  overflow: hidden;
+}
+
+
+.challenge-hero::before {
+  content: "07";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  color: var(--dtl-white);
+
+  font-family: 'Oswald', sans-serif;
+
+  font-size: clamp(18rem, 40vw, 40rem);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  opacity: 0.018;
+
+  pointer-events: none;
+}
+
+
+.challenge-hero-inner {
+  width: 100%;
+  max-width: 1000px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.challenge-eyebrow {
+  display: block;
+
+  margin-bottom: 25px;
+
+  color: var(--dtl-gold);
+
+  font-size: 0.75rem;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+
+.challenge-hero h1 {
+  margin: 0;
+
+  color: var(--dtl-white);
+
+  font-family: 'Oswald', sans-serif;
+
+  font-size: clamp(3.5rem, 8vw, 7rem);
+
+  font-weight: 700;
+
+  line-height: 0.95;
+
+  letter-spacing: 1px;
+}
+
+
+.challenge-hero h1 span {
+  display: block;
+
+  color: var(--dtl-gold);
+}
+
+
+.challenge-hero p {
+  max-width: 650px;
+
+  margin: 35px auto 0;
+
+  color: var(--dtl-muted);
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 1.05rem;
+
+  line-height: 1.7;
+}
+
+
+/* ==================================================
+   CHALLENGE MAIN AREA
+   ================================================== */
+
+.challenge-main-section {
+  padding: 110px 8%;
+
+  background: var(--dtl-cream);
+
+  color: var(--dtl-black);
+}
+
+
+.challenge-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+
+.challenge-section-header {
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 40px;
+}
+
+
+.challenge-section-number {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: var(--dtl-burgundy);
+
+  font-size: 0.72rem;
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+}
+
+
+.challenge-section-header h2 {
+  color: var(--dtl-black);
+
+  font-family: 'Oswald', sans-serif;
+
+  font-size: clamp(3rem, 6vw, 5.5rem);
+
+  font-weight: 700;
+
+  line-height: 0.95;
+}
+
+
+.challenge-section-header h2 span {
+  display: block;
+
+  color: var(--dtl-burgundy);
+}
+
+
+.challenge-section-header > p {
+  max-width: 350px;
+
+  color: #5f5551;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 0.95rem;
+
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+   ACTIVE CHALLENGE CARD
+   ================================================== */
+
+.active-card {
+  padding: 60px;
+
+  position: relative;
+
+  background: var(--dtl-panel-black);
+
+  color: var(--dtl-white);
+
+  border-top: 5px solid var(--dtl-burgundy);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.16);
+}
+
+
+/* ==================================================
+   BADGES
+   ================================================== */
+
+.badge-bar {
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+.week-badge {
+  padding: 9px 14px;
+
+  background: var(--dtl-burgundy);
+
+  color: var(--dtl-white);
+
+  font-size: 0.7rem;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.focus-tag {
+  color: var(--dtl-gold);
+
+  font-size: 0.7rem;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+/* ==================================================
+   CHALLENGE HEADING
+   ================================================== */
+
+.challenge-heading {
+  max-width: 900px;
+
+  margin-bottom: 60px;
+}
+
+
+.challenge-title {
+  margin-bottom: 16px;
+
+  color: var(--dtl-white);
+
+  font-family: 'Oswald', sans-serif;
+
+  font-size: clamp(2.7rem, 5vw, 4.8rem);
+
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+
+.challenge-desc {
+  max-width: 760px;
+
+  color: var(--dtl-muted);
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 1.05rem;
+
+  line-height: 1.7;
+}
+
+
+/* ==================================================
+   EXECUTION STEPS
+   ================================================== */
+
+.steps-section {
+  margin-bottom: 65px;
+}
+
+
+.challenge-subheading {
+  margin-bottom: 25px;
+}
+
+
+.challenge-subheading span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--dtl-gold);
+
+  font-size: 0.65rem;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.steps-section h2 {
+  color: var(--dtl-white);
+
+  font-family: 'Oswald', sans-serif;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+
+.step-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  list-style: none;
+}
+
+
+.step-item {
+  padding: 25px 28px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  border:
+    1px solid rgba(216, 176, 74, 0.16);
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.step-item:hover {
+  transform: translateX(5px);
+
+  background: rgba(146, 43, 43, 0.15);
+
+  border-color: rgba(216, 176, 74, 0.5);
+}
+
+
+.step-num {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+
+  background: var(--dtl-burgundy);
+
+  color: var(--dtl-gold);
+
+  font-family: 'Oswald', sans-serif;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+.step-text strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: var(--dtl-white);
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+
+.step-text span {
+  display: block;
+
+  color: var(--dtl-muted);
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 0.9rem;
+
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+   TRACKER
+   ================================================== */
+
+.tracker-section {
+  padding-top: 55px;
+
+  border-top:
+    1px solid rgba(216, 176, 74, 0.2);
+}
+
+
+.tracker-heading {
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 40px;
+}
+
+
+.tracker-heading span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--dtl-gold);
+
+  font-size: 0.65rem;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.tracker-heading h2 {
+  color: var(--dtl-white);
+
+  font-family: 'Oswald', sans-serif;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+
+.tracker-heading > p {
+  max-width: 380px;
+
+  color: var(--dtl-muted);
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 0.85rem;
+
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+   DAYS GRID
+   ================================================== */
+
+.days-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(7, minmax(0, 1fr));
+
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+
+.day-box {
+  min-height: 105px;
+
+  padding: 18px 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  color: var(--dtl-muted);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.1);
+
+  cursor: pointer;
+
+  user-select: none;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.day-box:hover {
+  transform: translateY(-3px);
+
+  border-color: var(--dtl-gold);
+}
+
+
+.day-name {
+  display: block;
+
+  font-size: 0.68rem;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+
+.check-mark {
+  display: block;
+
+  margin-top: 8px;
+
+  color: transparent;
+
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+
+/* COMPLETED DAY */
+
+.day-box.completed {
+  background: var(--dtl-burgundy);
+
+  border-color: var(--dtl-gold);
+
+  color: var(--dtl-white);
+}
+
+
+.day-box.completed .day-name {
+  color: var(--dtl-white);
+}
+
+
+.day-box.completed .check-mark {
+  color: var(--dtl-gold);
+}
+
+
+/* ==================================================
+   RESULTS BOX
+   ================================================== */
+
+.results-box {
+  padding: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 30px;
+
+  background: var(--dtl-burgundy);
+
+  border-left: 5px solid var(--dtl-gold);
+}
+
+
+.results-info {
+  max-width: 700px;
+}
+
+
+.results-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--dtl-gold);
+
+  font-size: 0.65rem;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.results-info h3 {
+  margin-bottom: 6px;
+
+  color: var(--dtl-white);
+
+  font-family: 'Oswald', sans-serif;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+.results-info p {
+  color: rgba(255, 255, 255, 0.72);
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 0.85rem;
+
+  line-height: 1.5;
+}
+
+
+.score-wrapper {
+  min-width: 120px;
+
+  text-align: right;
+}
+
+
+.score-wrapper > span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 0.6rem;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+
+.score-display {
+  color: var(--dtl-gold);
+
+  font-family: 'Oswald', sans-serif;
+
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+
+/* ==================================================
+   CHALLENGE CTA
+   ================================================== */
+
+.challenge-cta {
+  padding: 120px 8%;
+
+  position: relative;
+
+  background:
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(146, 43, 43, 0.3),
+      transparent 45%
+    ),
+    var(--dtl-black);
+
+  color: var(--dtl-white);
+}
+
+
+.challenge-cta-inner {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+.challenge-cta h2 {
+  margin-bottom: 30px;
+
+  color: var(--dtl-white);
+
+  font-family: 'Oswald', sans-serif;
+
+  font-size: clamp(3rem, 6vw, 5.5rem);
+
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+
+.challenge-cta h2 span {
+  display: block;
+
+  color: var(--dtl-gold);
+}
+
+
+.challenge-cta p {
+  max-width: 600px;
+
+  margin: 0 auto 40px;
+
+  color: var(--dtl-muted);
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+}
+
+
+.challenge-cta-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+
+.challenge-text-link {
+  padding-bottom: 5px;
+
+  color: var(--dtl-white);
+
+  border-bottom:
+    2px solid var(--dtl-gold);
+
+  text-decoration: none;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  transition:
+    color 0.25s ease;
+}
+
+
+.challenge-text-link:hover {
+  color: var(--dtl-gold);
+}
+
+
+/* ==================================================
+   ACTIVE NAVIGATION
+   ================================================== */
+
+.nav-links a.active {
+  color: var(--dtl-gold);
+}
+
+
+/* ==================================================
+   CHALLENGE RESPONSIVE
+   ================================================== */
+
+@media (max-width: 960px) {
+
+  .challenge-hero {
+    min-height: 560px;
+
+    padding-top: 180px;
+  }
+
+
+  .challenge-section-header,
+  .tracker-heading {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .active-card {
+    padding: 45px;
+  }
+
+
+  .days-grid {
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 720px) {
+
+  .challenge-hero {
+    min-height: 520px;
+
+    padding: 210px 6% 80px;
+  }
+
+
+  .challenge-hero h1 {
+    font-size:
+      clamp(3rem, 13vw, 5rem);
+  }
+
+
+  .challenge-main-section,
+  .challenge-cta {
+    padding: 80px 6%;
+  }
+
+
+  .active-card {
+    padding: 32px 22px;
+  }
+
+
+  .badge-bar {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .step-item {
+    padding: 20px;
+
+    align-items: flex-start;
+  }
+
+
+  .step-num {
+    width: 42px;
+    height: 42px;
+  }
+
+
+  .days-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+
+  .day-box {
+    min-height: 90px;
+  }
+
+
+  .results-box {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .score-wrapper {
+    text-align: left;
+  }
+
+
+  .challenge-cta-actions {
+    flex-direction: column;
+
+    gap: 22px;
+  }
+
+}
+
+
+@media (max-width: 430px) {
+
+  .challenge-title {
+    font-size: 2.5rem;
+  }
+
+
+  .step-item {
+    gap: 15px;
+  }
+
+
+  .step-num {
+    width: 38px;
+    height: 38px;
+  }
+
+}
