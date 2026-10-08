@@ -605,3 +605,62 @@ if (yearElement) {
     new Date().getFullYear();
 
 }
+/* ==================================================
+   SHARE TODAY'S RESET
+   ================================================== */
+
+const shareButton =
+  document.getElementById("shareResetBtn");
+
+if (shareButton) {
+
+  shareButton.addEventListener(
+    "click",
+    async (event) => {
+
+      event.preventDefault();
+
+      try {
+
+        if (navigator.share) {
+
+          await navigator.share({
+
+            title: "DTL Mindset",
+
+            text:
+              "Today's DTL Reset helped me refocus on faith, discipline, and purpose.",
+
+            url:
+              window.location.origin +
+              "/DTLMindset/index.html"
+
+          });
+
+        } else {
+
+          await navigator.clipboard.writeText(
+
+            window.location.origin +
+            "/DTLMindset/index.html"
+
+          );
+
+          alert(
+            "Link copied to clipboard!"
+          );
+
+        }
+
+      } catch (error) {
+
+        console.log(
+          "Share cancelled or unavailable."
+        );
+
+      }
+
+    }
+  );
+
+}
